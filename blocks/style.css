@@ -1,0 +1,45 @@
+body {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.placeholder {
+	background-color: rgba(0, 0, 0, 0.1);
+	display: inline-block;
+	box-sizing: border-box;
+	border-radius: 50px;
+	position: relative;
+}
+
+.outer {
+	height: 12%;
+	width: 75%;
+	margin: 5px;
+
+	/* alignment */
+	left: 60%;
+	transform: translateX(-50%);
+}
+
+.wrapper {
+	height: 100%;
+	padding: 2px;
+
+	/* hide element */
+	background-color: rgba(0, 0, 0, 0);
+
+	/* alignment */
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.inner {
+	height: 55%;
+	width: 80px;
+	margin: 0 10px 0 10px;
+
+	/* alignment */
+	top: 50%;
+	transform: translateY(-50%);
+}

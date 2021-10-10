@@ -1,0 +1,121 @@
+* {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.ball {
+    display: inline-block;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: rgb(33, 100, 16);
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    animation: moveR 3s 0s 5 both;
+}
+
+@keyframes moveR {
+    0%{
+        
+    }
+    
+    20%{
+        left: 75%;
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        background-color: rgb(12, 248, 138);
+    }
+    
+    40%{
+        height: 50px;
+        width: 50px;
+        background-color: rgb(33, 100, 16);
+    }
+
+    60%{
+        left: 25%;
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        background-color: rgb(12, 248, 138);
+    }
+
+    80%{
+        height: 50px;
+        width: 50px;
+        background-color: rgb(33, 100, 16);
+    }
+
+    100%{
+        left: 75%;
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        background-color: rgb(12, 248, 138);
+    }
+}
+
+.ball span {
+    line-height: 50px;
+    font-size: 10px;
+    left: 30%;
+    opacity: 0;
+    animation: moveR_s 3s 0s 5;
+}
+
+@keyframes moveR_s {
+    0%{
+        
+    }
+  
+    20%{
+        line-height: 100px;
+        left: 30%;
+        font-size: 30px;
+        font-weight: bold;
+        opacity: 1;
+    }
+   
+    40%{
+        line-height: 50px;
+        font-weight: unset;
+        font-size: 10px;
+        left: 30%;
+        opacity: 0;
+    }
+
+    60%{
+        line-height: 100px;
+        left: 30%;
+        font-size: 30px;
+        font-weight: bold;
+        opacity: 1;
+    }
+
+    80%{
+        line-height: 50px;
+        font-weight: unset;
+        font-size: 10px;
+        left: 30%;
+        opacity: 0;
+    }
+
+    100%{
+        line-height: 100px;
+        left: 30%;
+        font-size: 30px;
+        font-weight: bold;
+        opacity: 1;
+    }
+}
