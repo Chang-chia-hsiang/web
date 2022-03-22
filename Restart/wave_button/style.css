@@ -1,0 +1,61 @@
+*{
+    position: relative;
+}
+
+html, body{
+    height: 100%;
+}
+
+.wrapper{
+    height: 100%;
+    background-color: #4dd3e8;
+}
+
+.btn{
+    color: #fff;
+    text-decoration: none;
+    font-family: 微軟正黑體;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 25px 60px;
+    border: 3px solid #fff;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.btn:before{
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 320px;
+    border-radius: 130px;
+    background-color: #fff;
+    animation: Rotate 3.5s infinite linear;
+    transition: all 0.5s;
+}
+
+@keyframes Rotate{
+    0%{
+        transform: translateX(-50%) rotate(0deg);
+    }
+    100%{
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+.btn:hover span{
+    color: #4dd3e8;
+}
+
+.btn:hover:before{
+    top: 20%;
+}
